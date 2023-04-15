@@ -1,0 +1,12 @@
+C:\Users\GAMER1\source\repos\Final Project\Final Project\bin\Debug\Final Project.exe.config
+C:\Users\GAMER1\source\repos\Final Project\Final Project\bin\Debug\Final Project.exe
+C:\Users\GAMER1\source\repos\Final Project\Final Project\bin\Debug\Final Project.pdb
+C:\Users\GAMER1\source\repos\Final Project\Final Project\obj\Debug\Final Project.csproj.AssemblyReference.cache
+C:\Users\GAMER1\source\repos\Final Project\Final Project\obj\Debug\Final Project.csproj.SuggestedBindingRedirects.cache
+C:\Users\GAMER1\source\repos\Final Project\Final Project\obj\Debug\Final_Project.Properties.Resources.resources
+C:\Users\GAMER1\source\repos\Final Project\Final Project\obj\Debug\Final Project.csproj.GenerateResource.cache
+C:\Users\GAMER1\source\repos\Final Project\Final Project\obj\Debug\Final Project.csproj.CoreCompileInputs.cache
+C:\Users\GAMER1\source\repos\Final Project\Final Project\obj\Debug\Final Project.exe
+C:\Users\GAMER1\source\repos\Final Project\Final Project\obj\Debug\Final Project.pdb
+C:\Users\GAMER1\source\repos\Final Project\Final Project\obj\Debug\Final_Project.TaskPlanner.resources
+C:\Users\GAMER1\source\repos\Final Project\Final Project\obj\Debug\Final_Project.NewTask.resources
