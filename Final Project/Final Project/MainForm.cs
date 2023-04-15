@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,31 +18,36 @@ namespace Final_Project
 	public partial class TaskPlanner : Form
 	{
 		List<CheckBox> CheckBoxes = new List<CheckBox>();
-		int c = 0;
+		bool[] CurrentlyUsed = {false, false, false, false, false, false, false, false, false, false};
+		int i = 0;
 		string newVal;
 
 		private void NewTaskForm()
 		{
 			this.Hide();
-			if (c == 10)
+			bool done = false;
+			for (; !done; i++)
 			{
-				MessageBox.Show("Your list is full. You will need to complete the current tasks before you can add more");
-				return;
-			}
-			using (NewTask newForm = new NewTask())
-			{
-				newForm.ShowDialog();
-				newVal = newForm.GetValue();
-				if (newVal != "")
+				if (!(CurrentlyUsed[i]))
 				{
-					CheckBoxes[c].Text = newVal;
-					c++;
+					using (NewTask newForm = new NewTask())
+					{
+						newForm.ShowDialog();
+						newVal = newForm.GetValue();
+						if (newVal != "")
+						{
+							CheckBoxes[i].Text = newVal;
+							checkBox1.Visible = true;
+							CurrentlyUsed[i] = true;
+						}
+						done = true;
+					}
 				}
-			}
-			if (newVal != "")
-			{
-				checkBox1.Text = newVal;
-				checkBox1.Visible = true;
+				else if (i == 9)
+				{
+					MessageBox.Show("Your list is full. You will need to complete the current tasks before you can add more");
+					done = true;
+				}
 			}
 			Show();
 		}
@@ -114,14 +120,32 @@ namespace Final_Project
 		{
 			throw new NotImplementedException();
 		}
+		
+		private void check(CheckBox checkBox)
+		{
+			checkBox.Checked = true;
+		}
 
+		private void uncheck(CheckBox checkBox)
+		{
+			checkBox.Checked = false;
+		}
+
+		private void checkChange (CheckBox checkBox)	
+		{
+			if (checkBox.Checked)
+			{
+				uncheck(checkBox);
+			}
+			else
+			{
+				check(checkBox);
+			}
+		}
+	
 		private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
 		{
-			bool selected = checkBox1.Checked;
-			if (!selected)
-			{
-				checkBox1.Checked = true;
-			}
+			checkChange(checkBox1); 
 		}
 
 		private void AddButton(object sender, EventArgs e)
@@ -141,16 +165,22 @@ namespace Final_Project
 				if (cb.Checked)
 				{
 					cb.Visible = false;
+					CurrentlyUsed[i] = false;
 				}
+				i++;
 			}
+			i = 0;
 		}
 
 		private void ClearButton(object sender, EventArgs e)
 		{
 			foreach (var cb in CheckBoxes)
 			{
-					cb.Visible = false;
+				cb.Visible = false;
+				CurrentlyUsed[i] = false;
+				i++;
 			}
+			i = 0;
 		}
 	}
 }

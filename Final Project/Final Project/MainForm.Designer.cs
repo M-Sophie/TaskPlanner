@@ -205,6 +205,7 @@
 			this.checkBox1.TabIndex = 5;
 			this.checkBox1.Text = "checkBox1";
 			this.checkBox1.UseVisualStyleBackColor = true;
+			this.checkBox1.Visible = false;
 			// 
 			// checkBox2
 			// 
@@ -215,6 +216,7 @@
 			this.checkBox2.TabIndex = 6;
 			this.checkBox2.Text = "checkBox2";
 			this.checkBox2.UseVisualStyleBackColor = true;
+			this.checkBox2.Visible = false;
 			// 
 			// button4
 			// 
@@ -235,6 +237,7 @@
 			this.checkBox3.TabIndex = 8;
 			this.checkBox3.Text = "checkBox3";
 			this.checkBox3.UseVisualStyleBackColor = true;
+			this.checkBox3.Visible = false;
 			// 
 			// checkBox4
 			// 
@@ -245,6 +248,7 @@
 			this.checkBox4.TabIndex = 9;
 			this.checkBox4.Text = "checkBox4";
 			this.checkBox4.UseVisualStyleBackColor = true;
+			this.checkBox4.Visible = false;
 			// 
 			// checkBox5
 			// 
@@ -255,6 +259,7 @@
 			this.checkBox5.TabIndex = 10;
 			this.checkBox5.Text = "checkBox5";
 			this.checkBox5.UseVisualStyleBackColor = true;
+			this.checkBox5.Visible = false;
 			// 
 			// checkBox6
 			// 
@@ -265,6 +270,7 @@
 			this.checkBox6.TabIndex = 11;
 			this.checkBox6.Text = "checkBox6";
 			this.checkBox6.UseVisualStyleBackColor = true;
+			this.checkBox6.Visible = false;
 			// 
 			// checkBox7
 			// 
@@ -275,6 +281,7 @@
 			this.checkBox7.TabIndex = 12;
 			this.checkBox7.Text = "checkBox7";
 			this.checkBox7.UseVisualStyleBackColor = true;
+			this.checkBox7.Visible = false;
 			// 
 			// checkBox8
 			// 
@@ -285,6 +292,7 @@
 			this.checkBox8.TabIndex = 13;
 			this.checkBox8.Text = "checkBox8";
 			this.checkBox8.UseVisualStyleBackColor = true;
+			this.checkBox8.Visible = false;
 			// 
 			// checkBox9
 			// 
@@ -295,6 +303,7 @@
 			this.checkBox9.TabIndex = 14;
 			this.checkBox9.Text = "checkBox9";
 			this.checkBox9.UseVisualStyleBackColor = true;
+			this.checkBox9.Visible = false;
 			// 
 			// checkBox10
 			// 
@@ -305,6 +314,7 @@
 			this.checkBox10.TabIndex = 15;
 			this.checkBox10.Text = "checkBox10";
 			this.checkBox10.UseVisualStyleBackColor = true;
+			this.checkBox10.Visible = false;
 			// 
 			// TaskPlanner
 			// 
