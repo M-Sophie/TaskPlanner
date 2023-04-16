@@ -35,7 +35,8 @@ namespace Final_Project
 		{
 			newValue = textBox1.Text;
 			this.Close();
-			MessageBox.Show("The new task '" + newValue + "' has been saved.");
+			if (newValue != "")
+				MessageBox.Show("The new task '" + newValue + "' has been saved.");
 		}
 
 		private void CancelButton(object sender, EventArgs e)

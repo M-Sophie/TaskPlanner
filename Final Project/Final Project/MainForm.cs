@@ -11,10 +11,6 @@ using System.Windows.Forms;
 
 namespace Final_Project
 {
-	// Save as SVG
-	// read user input
-	// Transfer user input to first form
-
 	public partial class TaskPlanner : Form
 	{
 		List<CheckBox> CheckBoxes = new List<CheckBox>();
@@ -37,7 +33,7 @@ namespace Final_Project
 						if (newVal != "")
 						{
 							CheckBoxes[i].Text = newVal;
-							checkBox1.Visible = true;
+							CheckBoxes[i].Visible = true;
 							CurrentlyUsed[i] = true;
 						}
 						done = true;
@@ -50,6 +46,7 @@ namespace Final_Project
 				}
 			}
 			Show();
+			i = 0;
 		}
 
 		private void NewWindow(bool newTask)
@@ -97,7 +94,6 @@ namespace Final_Project
 
 		private void closeToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			// Add saving request
 			this.Close();
 		}
 
@@ -155,7 +151,7 @@ namespace Final_Project
 
 		private void ViewButton(object sender, EventArgs e)
 		{
-
+			throw new NotImplementedException();
 		}
 
 		private void DeleteButton(object sender, EventArgs e)
@@ -166,6 +162,10 @@ namespace Final_Project
 				{
 					cb.Visible = false;
 					CurrentlyUsed[i] = false;
+					if (cb.Checked)
+					{
+						uncheck(cb);
+					}
 				}
 				i++;
 			}
@@ -178,15 +178,13 @@ namespace Final_Project
 			{
 				cb.Visible = false;
 				CurrentlyUsed[i] = false;
+				if (cb.Checked)
+				{
+					uncheck(cb);
+				}
 				i++;
 			}
 			i = 0;
 		}
 	}
 }
-
-// Add button: alt + a
-// Complete button: alt + c
-// View button: alt + v
-// Delete button: alt + d
-
