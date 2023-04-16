@@ -47,3 +47,4 @@ Copy button
 Paste button
 Cut button
 View Button
+Implement tests for all features
