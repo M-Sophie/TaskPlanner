@@ -1,5 +1,7 @@
 # TaskPlanner
 
+For a clearer picture, you will find a nicely-formatted Google Docs version here with screenshots: https://docs.google.com/document/d/1uuMYKCoicTdUvQP23R6oVOygWogSZ8a9eP5CqTBRT1g/edit?usp=sharing 
+
 Program walkthrough
 
 This program holds two Windows Forms.
